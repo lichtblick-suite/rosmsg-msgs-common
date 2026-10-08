@@ -22,6 +22,9 @@ async function main() {
   const msgdefsRos2GalacticPath = join(__dirname, "..", "msgdefs", "ros2galactic");
   const msgdefsRos2HumblePath = join(__dirname, "..", "msgdefs", "ros2humble");
   const msgdefsRos2IronPath = join(__dirname, "..", "msgdefs", "ros2iron");
+  const msgdefsRos2JazzyPath = join(__dirname, "..", "msgdefs", "ros2jazzy");
+  const msgdefsRos2KiltedPath = join(__dirname, "..", "msgdefs", "ros2kilted");
+  const msgdefsRos2LyricalPath = join(__dirname, "..", "msgdefs", "ros2lyrical");
   const distDir = join(__dirname, "..", "dist");
   const libFile = join(distDir, "index.js");
   const esmFile = join(distDir, "index.esm.js");
@@ -31,6 +34,9 @@ async function main() {
     ["ros2galactic", {}],
     ["ros2humble", {}],
     ["ros2iron", {}],
+    ["ros2jazzy", {}],
+    ["ros2kilted", {}],
+    ["ros2lyrical", {}],
   ]);
 
   await loadDefinitions(msgdefsRos1Path, definitionsByGroup.get("ros1")!, {});
@@ -41,6 +47,15 @@ async function main() {
     ros2: true,
   });
   await loadDefinitions(msgdefsRos2IronPath, definitionsByGroup.get("ros2iron")!, {
+    ros2: true,
+  });
+  await loadDefinitions(msgdefsRos2JazzyPath, definitionsByGroup.get("ros2jazzy")!, {
+    ros2: true,
+  });
+  await loadDefinitions(msgdefsRos2KiltedPath, definitionsByGroup.get("ros2kilted")!, {
+    ros2: true,
+  });
+  await loadDefinitions(msgdefsRos2LyricalPath, definitionsByGroup.get("ros2lyrical")!, {
     ros2: true,
   });
 

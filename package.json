@@ -1,6 +1,6 @@
 {
   "name": "@lichtblick/rosmsg-msgs-common",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common ROS message definitions using @lichtblick/rosmsg",
   "license": "MIT",
   "keywords": [
